@@ -112,8 +112,12 @@ input[type='search'],
     margin: 50px 0 0 0;
 }
 
-.photo::after {
-    content: 'Футбол — це командний вид спорту, який грається між двома командами по одинадцять гравців зі сферичним м\'ячем';
+#footbal-photo {
+    width: 960px;
+    height: 450px;
+}
+
+.quote {
     position: absolute;
     z-index: 1;
     bottom: 15px;
@@ -126,9 +130,4 @@ input[type='search'],
     color: white;
     font-size: 19px;
     opacity: 0.8;
-}
-
-#footbal-photo {
-    width: 960px;
-    height: 450px;
 }
