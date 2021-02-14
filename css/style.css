@@ -4,6 +4,7 @@
 
 body,
 h1,
+h2,
 p {
     margin: 0;
 }
@@ -13,10 +14,15 @@ header {
     border-bottom: 1px solid #c3c3c3;
 }
 
-h1 {
+h1, 
+h2 {
     color: #646464;
     font-weight: 300;
     font-size: 35px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 a {
@@ -52,7 +58,8 @@ a {
 }
 
 input[type='search'],
-.btn-search {
+.btn-search,
+.btn {
     width: 215px;
     height: 32px;
     margin: 0 5px 0 0;
@@ -67,6 +74,13 @@ input[type='search'],
 .btn-search {
     width: 80px;
     margin: 0;
+}
+
+.btn {
+    width: 105px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #d54346;
 }
 
 .btn-search:hover,
@@ -115,19 +129,39 @@ input[type='search'],
 #footbal-photo {
     width: 960px;
     height: 450px;
+    margin: 0 0 0 10px;
 }
 
 .quote {
     position: absolute;
     z-index: 1;
     bottom: 15px;
-    left: 15px;
+    left: 20px;
     display: block;
     width: 415px;
     height: 70px;
     padding: 40px;
     background-color: #151515;
     color: white;
-    font-size: 19px;
+    font-size: 21px;
     opacity: 0.8;
 }
+
+.column-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 35px;
+    margin: 50px 0;
+}
+
+.tetx-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    flex-basis: 300px;
+}
+
+.tetx-column .text {
+    line-height: 25px;
+    font-size: 15px;
+} 
