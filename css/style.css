@@ -40,11 +40,12 @@ a {
     flex-direction: column;
 }
 
-.logo-header,
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.logo {
+    float: left;
+}
+
+.search {
+    float: right;
 }
 
 .text {
@@ -89,20 +90,23 @@ input[type='search'],
 }
 
 .menu-nav {
-    display: flex;
-    column-gap: 25px;
+    float: left;
+    margin: 15px 0 0 0;
+}
+
+.text-menu {
+    margin: 0 25px 0 0;
 }
 
 .site {
-    display: flex;
-    column-gap: 10px;
+    float: right;
 }
 
 .site-btn {
-    display: block;
+    display: inline-block;
     width: 32px;
     height: 32px;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 10px;
     border-radius: 50%;
     background-color: #353535;
 }
@@ -148,20 +152,51 @@ input[type='search'],
 }
 
 .column-row {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 35px;
-    margin: 50px 0;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 40px 0;
 }
 
 .tetx-column {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    flex-basis: 300px;
+    float: left;
+}
+
+.tetx-column:last-child {
+    float: none;
 }
 
 .tetx-column .text {
     line-height: 25px;
     font-size: 15px;
 } 
+
+.flex-row {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+.column-2,
+.column-1 {
+    width: 470px;
+    height: 300px;
+}
+
+.img {
+    width: 80px;
+    height: 80px;
+    background-color: #151515;
+}
+
+.blockqoute {
+    display: flex;
+    column-gap: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    border-top: 1px solid #c3c3c3;
+    margin: auto;
+    padding: 15px 0;
+}
